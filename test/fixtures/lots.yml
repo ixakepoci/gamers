@@ -1,0 +1,27 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  type: 
+  amount: 1
+  name: MyString
+  description: MyText
+  seller_id: 1
+  buyer_id: 1
+  mediator_id: 1
+  album_id: 1
+  fixed: 
+  price: 9.99
+  status: MyString
+
+two:
+  type: 
+  amount: 1
+  name: MyString
+  description: MyText
+  seller_id: 1
+  buyer_id: 1
+  mediator_id: 1
+  album_id: 1
+  fixed: 
+  price: 9.99
+  status: MyString

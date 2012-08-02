@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  image_id1: 1
+  image_id2: 1
+  image_id3: 1
+  image_id4: 1
+  image_id5: 1
+
+two:
+  image_id1: 1
+  image_id2: 1
+  image_id3: 1
+  image_id4: 1
+  image_id5: 1

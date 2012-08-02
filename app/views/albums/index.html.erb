@@ -1,0 +1,31 @@
+<h1>Listing albums</h1>
+
+<table>
+  <tr>
+    <th>Image id1</th>
+    <th>Image id2</th>
+    <th>Image id3</th>
+    <th>Image id4</th>
+    <th>Image id5</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @albums.each do |album| %>
+  <tr>
+    <td><%= album.image_id1 %></td>
+    <td><%= album.image_id2 %></td>
+    <td><%= album.image_id3 %></td>
+    <td><%= album.image_id4 %></td>
+    <td><%= album.image_id5 %></td>
+    <td><%= link_to 'Show', album %></td>
+    <td><%= link_to 'Edit', edit_album_path(album) %></td>
+    <td><%= link_to 'Destroy', album, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Album', new_album_path %>

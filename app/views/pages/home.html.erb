@@ -1,0 +1,77 @@
+<%= render 'layouts/header' %>
+
+<div class="content">
+  <ul class="ca-menu">
+
+    <li>
+      <%= link_to "/pages/buy" do %>
+        <span class="ca-icon">I</span>
+        <div class="ca-content">
+          <h2 class="ca-main">Купить</h2>
+          <h3 class="ca-sub">Любую вещь</h3>
+        </div>
+     <% end %>
+                    
+    </li>
+    <li>
+      <%= link_to "/pages/sell" do %>
+        <span class="ca-icon">C</span>
+        <div class="ca-content">
+          <h2 class="ca-main">Продать</h2>
+          <h3 class="ca-sub">Все что угодно</h3>
+        </div>
+      <% end %>                    
+    </li>
+    <li>
+      <%= link_to "/pages/earn" do %>
+        <span class="ca-icon">S</span>
+        <div class="ca-content">
+          <h2 class="ca-main">Заработать!</h2>
+          <h3 class="ca-sub">Игровые или реальные деньги</h3>
+        </div>
+      <% end %>                    
+    </li>  
+    <li>
+    <%= link_to "/pages/home" do %>
+      <span class="ca-icon">B</span>
+      <div class="ca-content">
+        <h2 class="ca-main">МегаМолл</h2>
+        <h3 class="ca-sub">Таймкарты, ключи, боты...</h3>
+      </div>
+    <% end %>                    
+  </li>
+</ul>
+
+
+<main>
+
+	<div class="section_slogan"><span class="cursive"> Ты в правильном месте, если тебе нужен... </span></div>
+
+
+
+<div class="abox">
+	<figure>
+	<fcapion><h1>...мощный перс</h1></fcaption>
+	<a href="#"></a>
+    <%= link_to "/pages/characters" do %>
+    	<%= image_tag("bror.jpg", :alt => "Персонажи", :width=>"289", :height=>"175" ) %>
+    <% end %>
+    </figure>
+</div>
+<div class="abox">
+	<figure>
+	<fcapion><h1>...золото без напряга </h1></fcaption>		
+    <%= link_to "/pages/money" do %><%= image_tag("nat.jpg", :alt => "Деньги", :width=>"287", :height=>"176" ) %>
+    <% end %>  </figure>
+</div>
+<div class="abox">
+    <figure>
+    <fcapion><h1>...эпичный и редкий шмот</h1></fcaption>
+    <a href="#"></a>
+    <%= link_to "/pages/items" do %>
+    	<%= image_tag("nas.jpg", :alt => "Шмот", :width=>"289", :height=>"178" ) %>
+    <% end %>
+	</figure>
+</div>   
+</main>
+ </div>

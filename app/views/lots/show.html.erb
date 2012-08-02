@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Type:</b>
+  <%= @lot.type %>
+</p>
+
+<p>
+  <b>Amount:</b>
+  <%= @lot.amount %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @lot.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @lot.description %>
+</p>
+
+<p>
+  <b>Seller:</b>
+  <%= @lot.seller_id %>
+</p>
+
+<p>
+  <b>Buyer:</b>
+  <%= @lot.buyer_id %>
+</p>
+
+<p>
+  <b>Mediator:</b>
+  <%= @lot.mediator_id %>
+</p>
+
+<p>
+  <b>Album:</b>
+  <%= @lot.album_id %>
+</p>
+
+<p>
+  <b>Fixed:</b>
+  <%= @lot.fixed %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @lot.price %>
+</p>
+
+<p>
+  <b>Status:</b>
+  <%= @lot.status %>
+</p>
+
+
+<%= link_to 'Edit', edit_lot_path(@lot) %> |
+<%= link_to 'Back', lots_path %>

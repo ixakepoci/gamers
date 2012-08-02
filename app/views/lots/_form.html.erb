@@ -1,0 +1,61 @@
+<%= form_for(@lot) do |f| %>
+  <% if @lot.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@lot.errors.count, "error") %> prohibited this lot from being saved:</h2>
+
+      <ul>
+      <% @lot.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :type %><br />
+    <%= f.text_field :type %>
+  </div>
+  <div class="field">
+    <%= f.label :amount %><br />
+    <%= f.number_field :amount %>
+  </div>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :seller_id %><br />
+    <%= f.number_field :seller_id %>
+  </div>
+  <div class="field">
+    <%= f.label :buyer_id %><br />
+    <%= f.number_field :buyer_id %>
+  </div>
+  <div class="field">
+    <%= f.label :mediator_id %><br />
+    <%= f.number_field :mediator_id %>
+  </div>
+  <div class="field">
+    <%= f.label :album_id %><br />
+    <%= f.number_field :album_id %>
+  </div>
+  <div class="field">
+    <%= f.label :fixed %><br />
+    <%= f.text_field :fixed %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br />
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :status %><br />
+    <%= f.text_field :status %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

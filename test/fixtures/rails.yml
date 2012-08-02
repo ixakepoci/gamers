@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  g: MyString
+  nifty: 
+  authentication: MyString
+  user_id: 1
+
+two:
+  g: MyString
+  nifty: 
+  authentication: MyString
+  user_id: 1
